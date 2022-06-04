@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>cn.labzen</groupId>
+    <artifactId>parent</artifactId>
+    <version>11.4-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>example-javafx</artifactId>
+  <packaging>jar</packaging>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>cn.labzen</groupId>
+        <artifactId>logger</artifactId>
+        <version>1.1-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>cn.labzen</groupId>
+        <artifactId>javafx</artifactId>
+        <version>17.1-SNAPSHOT</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>cn.labzen</groupId>
+      <artifactId>logger</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>cn.labzen</groupId>
+      <artifactId>javafx</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+    </dependency>
+  </dependencies>
+</project>
